@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowJs": true,            
+    "checkJs": true,
+    "outDir": "dist",
+    "rootDir": "./src",
+    "sourceMap": true,
+    "target": "ES6",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "strict": true,    
+  },
+  "include": ["src/**/*"]
+}

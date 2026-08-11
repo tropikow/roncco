@@ -13,9 +13,8 @@
     "baseUrl": ".", 
     "paths": {
       "@config/*": ["src/config/index"],
-      "@helpers/*": ["src/helpers/*"],
-      "@routes/*": ["src/routes/*"],
-      "@types/*": ["src/types/*"]
+      "@helpers/*": ["src/helpers/index"],
+      "@router/*": ["src/routes/router"]
     }
   },
   "include": ["src/**/*"]

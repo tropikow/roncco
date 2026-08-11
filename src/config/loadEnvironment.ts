@@ -1,6 +1,6 @@
 import z, { ZodError } from 'zod'
 
-import { nonEmptyString } from '../helpers/zodSchemas'
+import { nonEmptyString } from '@helpers/'
 
 const environmentSchema = z.object({
   yuju: nonEmptyString  

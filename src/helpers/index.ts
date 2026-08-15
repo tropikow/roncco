@@ -1,3 +1,3 @@
-import { nonEmptyString, nonNegativeNumber } from "./zodSchemas";
+import { nonEmptyString, nonNegativeNumber, databaseSchema } from "./zodSchemas";
 
-export { nonEmptyString, nonNegativeNumber }
+export { nonEmptyString, nonNegativeNumber, databaseSchema }

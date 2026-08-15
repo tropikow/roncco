@@ -14,7 +14,10 @@
     "paths": {
       "@config/*": ["src/config/index"],
       "@helpers/*": ["src/helpers/index"],
-      "@router/*": ["src/routes/router"]
+      "@router/*": ["src/routes/router"],
+      "@db/*": ["src/database/index"],
+      "@tp/*": ["src/types/index"],
+      "@errors/*": ["src/errors/index"]
     }
   },
   "include": ["src/**/*"]

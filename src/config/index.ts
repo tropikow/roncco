@@ -1,3 +1,3 @@
-import { loadEnvironments } from "./loadEnvironment";
+import { loadEnvironments, config } from "./loadEnvironment";
 
-export { loadEnvironments }
+export { loadEnvironments, config }

@@ -1,13 +1,21 @@
 import z, { ZodError } from 'zod'
 
-import { nonEmptyString } from '@helpers/'
+import { nonEmptyString, databaseSchema } from '@helpers/'
 
 const environmentSchema = z.object({
-  yuju: nonEmptyString  
+  yuju: nonEmptyString,
+  database: databaseSchema
 })
 
-const config = {
-  yuju: process.env.YUJU
+export const config = {
+  yuju: process.env.YUJU,
+  database: {
+    user: process.env.POSTGRESQL_USER,
+    host: process.env.POSTGRESQL_HOST,
+    database: process.env.POSTGRESQL_DATABASE_NAME,
+    password: process.env.POSTGRESQL_DATABASE_PASSWORD,
+    port: Number(process.env.POSTGRESQL_DATABASE_PORT)
+  }
 }
 
 export const loadEnvironments = () => {
